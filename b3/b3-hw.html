@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let scoop = parseInt(prompt("Nhập số lượng múc kem:"));
+
+      if (scoop === 0) {
+        console.log("An nhàn lên, kem sắp tan chảy!");
+      } else if (scoop === 3) {
+        console.log("Kem sắp hết!");
+      } else if (scoop === 2) {
+        console.log("Lạnh quá!");
+      } else if (scoop === 1) {
+        console.log("Lạnh v!");
+      } else if (scoop < 0) {
+        console.log("Hết rồi!");
+      } else {
+        console.log("Vẫn còn nhiều kem, hãy dùng lại thêm!");
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // - Khai báo một biến String và thực hiện các thao tác như nối chuỗi, cắt chuỗi (substring), và tìm độ dài của chuỗi.
+      let myString = "Xin chào, đây là chuỗi ví dụ.";
+      console.log("Chuỗi gốc:", myString);
+
+      // Tìm độ dài của chuỗi
+      console.log("Độ dài chuỗi:", myString.length);
+
+      // Tìm chuỗi con (substring) - sử dụng indexOf để tìm vị trí
+      let subStringToFind = "ví dụ";
+      let position = myString.indexOf(subStringToFind);
+      console.log(`Vị trí của chuỗi con "${subStringToFind}":`, position);
+
+      // Cắt chuỗi con - sử dụng slice hoặc substring
+      let cutString = myString.slice(0, 9); // Cắt từ vị trí 0 đến 9 (Xin chào,)
+      console.log("Chuỗi con được cắt:", cutString);
+
+      // Nối chuỗi
+      let additionalString = " Thêm phần này.";
+      let concatenatedString = myString + additionalString;
+      console.log("Chuỗi sau khi nối:", concatenatedString);
+
+      // - Nhập vào một chuỗi từ người dùng, sau đó in ra chuỗi đó đã được in hoa.
+      let userInput = prompt("Nhập vào một chuỗi từ người dùng:");
+      if (userInput) {
+        let upperCaseInput = userInput.toUpperCase();
+        console.log("Chuỗi in hoa:", upperCaseInput);
+      } else {
+        console.log("Không có đầu vào.");
+      }
+
+      // - Khai báo một biến chứa tên người dùng (String) và tuổi (Number), sau đó in ra thông báo dạng: "Tên bạn là X và bạn Y tuổi."
+      let ten = "Nguyễn Văn A";
+      let tuoi = 25;
+      console.log(`Tên bạn là ${ten} và bạn ${tuoi} tuổi.`);
+
+      // - Tạo một chương trình nhập vào một câu từ người dùng, đếm số ký tự trong câu và in ra độ dài của câu đó.
+      let cau = prompt("Nhập vào một câu từ người dùng:");
+      if (cau) {
+        let doDai = cau.length;
+        console.log("Độ dài của câu:", doDai);
+      } else {
+        console.log("Không có đầu vào.");
+      }
+    </script>
+  </body>
+</html>
